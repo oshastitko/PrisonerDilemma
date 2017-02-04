@@ -17,7 +17,6 @@ namespace PrisonerDilemma.Strategies
         {
             var r = Rnd();
             return r;
-            //return Rnd();
         }
 
         Random rnd = new Random(unchecked((int)(DateTime.Now.Ticks)));
@@ -26,10 +25,8 @@ namespace PrisonerDilemma.Strategies
         Action Rnd()
         {
             byte first = Guid.NewGuid().ToByteArray()[0];
-            if (first < 128)
-                return Action.Tie;
-            else
-                return Action.Informer;
+
+            return (first < 128) ? Action.Tie : Action.Informer;
             //return (Action)rnd.Next(0, 2);
         }
     }

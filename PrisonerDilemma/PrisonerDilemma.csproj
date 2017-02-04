@@ -49,6 +49,7 @@
     <Compile Include="Strategies\StrategyAlwaysTie.cs" />
     <Compile Include="Strategies\StrategyRandom.cs" />
     <Compile Include="Strategies\StrategyTieBeforeAnotherSqueal.cs" />
+    <Compile Include="Strategies\StrategyViceVersa.cs" />
     <Compile Include="StrategyBase.cs" />
     <Compile Include="Utils.cs" />
   </ItemGroup>
